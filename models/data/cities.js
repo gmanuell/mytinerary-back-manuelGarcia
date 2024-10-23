@@ -100,17 +100,17 @@ const cities = [
       population: 1620343
     },
     {
-      name: "Mérida",
+      name: "Merida",
       country: "Venezuela",
-      image: "https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/10DD8/production/_96908096_gettyimages-495925646.jpg.webp", // Imagen de Santa Fe como placeholder
-      description: "Mérida es conocida por su proximidad a los Andes venezolanos y su teleférico, el más largo y alto del mundo.",
+      image: "https://navicu.com/storage/app/uploads/public/657/708/f08/657708f08aea0491837340.webp",
+      description: "Merida es conocida por su proximidad a los Andes venezolanos y su teleférico, el más largo y alto del mundo.",
       continent: "South America",
       population: 204879
     },
     {
       name: "Buenos Aires",
       country: "Argentina",
-      image: "https://ichef.bbci.co.uk/ace/ws/549/cpsprodpb/15BF8/production/_96908098_gettyimages-522557886.jpg.webp", // Imagen de Ubud como placeholder
+      image: "https://www.travelandleisure.com/thmb/zvWBxyJ3Nj56uHYXH73NXXgC3iA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/world-class-design-buenos-aires-BAVISIT0418-5e990a610aab499bb9991771dac5fb54.jpg", 
       description: "Buenos Aires, la capital de Argentina, es conocida por su vibrante escena cultural y sus raíces europeas.",
       continent: "South America",
       population: 3075646
@@ -118,7 +118,7 @@ const cities = [
     {
       name: "Sídney",
       country: "Australia",
-      image: "https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/E6C8/production/_96908095_gettyimages-539115110.jpg.webp", // Imagen de Roma como placeholder
+      image: "https://fotografias.larazon.es/clipping/cmsimages02/2019/08/07/4DA2DAB5-8E42-4872-A15A-4EA75C9CB7F9/98.jpg?crop=1031,580,x0,y50&width=1900&height=1069&optimize=low&format=webply", 
       description: "Sídney es la ciudad más grande de Australia, conocida por su Ópera icónica y playas.",
       continent: "Australia",
       population: 5312163

@@ -1,7 +1,7 @@
 const bad_request = (error, req, res, next) => {
     console.log(error)
-    if (error.status = "bad Request") {
-        return res.status(400).json({
+    if (error.name == "ValidationError") {
+        return res.status(403).json({
             success: false,
             response: error,
             message: `Bad request`
