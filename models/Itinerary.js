@@ -3,6 +3,7 @@ import { Schema, model } from "mongoose";
 let collection = "itineraries"
 let schema = new Schema({
     name:{type:String,required:true},
+    description:{type:String,required:true},
     photo:{type:String,required:true},
     price:{type:Number,required:true},
     duration:{type:String,required:true},
