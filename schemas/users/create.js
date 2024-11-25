@@ -16,9 +16,8 @@ const schema = joi.object({
     email: joi.string().email({ tlds: { allow: false } }).required().messages({
         'string.email': 'Must be a valid email'
     }),    
-    password: joi.string().required().min(8).pattern(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/).messages({
-        'string.min': 'La contraseña debe tener al menos 8 caracteres',
-        'string.pattern.base': 'the password include min a special character'
+    password: joi.string().required().min(3).messages({
+        'string.min': 'La contraseña debe tener al menos 3 caracteres',
     }),    
     photo: joi.string().required().messages({
         'string.pattern.base': 'please enter url image valid'
