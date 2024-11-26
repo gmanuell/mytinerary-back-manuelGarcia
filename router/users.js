@@ -1,5 +1,5 @@
 import { Router } from "express";
-import {allUser,userById}  from "../controllers/users/read.js";
+import {allUser,userById,validateToken}  from "../controllers/users/read.js";
 import register from "../controllers/users/register.js";
 import { update } from "../controllers/users/update.js";
 import { deleteOne } from "../controllers/users/delete.js";
@@ -16,5 +16,6 @@ routerUsers.get('/id/:id',passport.authenticate('jwt',{session:false}),userById)
 routerUsers.post('/register',validator(schemaUsersCreated),accountExist,createHash,register)
 routerUsers.put('/update',passport.authenticate('jwt',{session:false}),update)
 routerUsers.delete('/deleteOne',passport.authenticate('jwt',{session:false}),deleteOne)
+routerUsers.get('/validateToken', passport.authenticate('jwt', { session: false }), validateToken)
 
 export default routerUsers

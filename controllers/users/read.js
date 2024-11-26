@@ -35,4 +35,17 @@ let userById =  async (req,res) => {
     }        
 }
 
-export {allUser,userById} 
+let validateToken = async (req, res, next) => {
+    try {
+        //El usuario autenticado esta en req.user, no en res.user        
+        return res.status(200).json({
+            success: true,
+            response: req.user
+        });
+    } catch (error) {
+        next(error);
+    }
+};
+
+
+export {allUser,userById,validateToken} 
